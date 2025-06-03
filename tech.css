@@ -1,0 +1,156 @@
+@import url(global.css);
+
+main {
+    min-height: 100vh;
+    padding-block: 2em;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+body {  
+    min-height: 100vh; 
+    overflow-x: hidden;
+    background-image: url('assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 2.5em;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+h4 span {
+  margin-right: 0.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+section {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.circle-container {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    margin-block: 2em;
+}
+
+.circle {
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid white;
+    
+}
+
+.circle.active-circle {
+  background-color: white;
+  color: var(--light-gray);
+}
+
+.circle:hover {
+  background-color: white;
+  opacity: 0.5;
+  color: var(--light-gray);
+}
+
+.texts {
+  padding: 0 2em;
+ 
+}
+
+h4, h5, h3 {
+  text-transform: uppercase;
+
+}
+
+h5 {
+  font-weight: 400;
+  font-family: 'Barlow Condensed', serif;
+}
+
+h3 {
+  margin-top: 0.3em;
+  font-size: clamp(1.5em, 1rem + 2vw, 3rem);
+  font-family: 'Bellefair', serif;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.65em;
+    color: var(--dark-gray);
+    margin-top: 1em;
+    font-family: 'Barlow', serif;
+ }
+
+ @media(min-width: 600px) {
+  body {
+    background-image: url('assets/technology/background-technology-tablet.jpg');
+  }
+ }
+
+ @media(min-width: 900px) {
+  main {
+    
+  }
+  
+  h4 {
+    text-align: left;
+    margin-left: 15%;
+  }
+  
+  .tech-section {
+    display: grid;
+    text-align: left;
+    grid-template-rows: auto;
+    grid-template-areas: "number txt txt img img";
+    place-items: center;
+    gap: 2em;
+    padding-left: 15%;
+  }
+
+  .circle-container {
+    grid-area: number;
+    flex-direction: column;
+  }
+
+  .texts {
+    grid-area: txt;
+  }
+
+  .image-container {
+    grid-area: img;
+  }
+
+
+ }
+
+ @media(min-width: 1024px) {
+    body {
+      background-image: url('assets/technology/background-technology-desktop.jpg');
+     }
+
+ .circle {
+  height: 3rem;
+  width: 3rem;
+ }
+
+ p {
+  line-height: 1.6rem;
+  font-size: 0.8rem;
+  padding-right: 2rem;
+ }
+
+     }

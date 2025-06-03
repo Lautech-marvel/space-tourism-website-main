@@ -1,0 +1,171 @@
+@import url(global.css);
+
+main {
+    min-height: 100vh;
+    padding-top: 2em;
+    /* max-width: 1500px; */
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  
+body {  
+    min-height: 100vh; 
+    overflow-x: hidden;
+    background-image: url('assets/crew/background-crew-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 2.5em;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+section {
+    position: relative;
+ }
+
+.slide-container {
+    position: relative;
+    
+ }
+
+ .slide {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    
+ }
+
+.crew-img-container {
+    position: relative;
+    height: 20em;
+    width: 20em;
+    margin: 0 auto 3em; /* this causes am issue of overlapping in large screen sizes */ 
+}
+
+.crew-img-container img {
+    height: 100%; /* Ensures the image takes up the full height of the container */
+    width: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.crew-img-container::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 1px;
+   background-color: var(--light-gray);
+   width: 100%;
+}
+
+.crew-info {
+    text-align: center;
+}
+
+h5, h3 {
+    text-transform: uppercase;
+}
+
+.crew-name {
+    margin-block: 0.5em 1em;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.65em;
+    color: var(--dark-gray);
+    margin-top: 1em;
+    width: 80%;
+    margin: 0 auto;
+ }
+
+ 
+
+ .circles {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    position: absolute;
+    left: 50%;
+    top: 23.8em;
+    transform: translateX(-50%);
+    z-index: 900;
+ }
+
+ .circle {
+    height: 1em;
+    width: 1em;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+ }
+
+ .active-circle {
+    opacity: 1;
+    scale: 1.2;
+ }
+
+
+ @media(min-width: 1000px) {
+   section {
+    padding-left: 15%;
+   }
+
+   .slide-container {
+    position: relative;
+    min-height: 100vh;
+ }
+   
+    h4 {
+       text-align: left;
+    }
+    
+    .slide {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        bottom: 0;
+    }
+
+.crew-img-container {
+    margin: 0 0;
+}
+
+    .crew-info {
+        text-align: left;
+    }
+
+    .crew-name {
+        margin-block: 0.5em 1em;
+    }
+    
+    p {
+        width: fit-content;
+        margin: 0 0;
+     }
+
+    .crew-img-container {
+        order: 2;
+    }
+
+    .crew-img-container::after {
+        display: none;
+    }
+
+    .circles {
+        left: 15%;
+        top: 21em;
+        transform: translateX(0);
+    }
+ } 
+ 
+
+ 

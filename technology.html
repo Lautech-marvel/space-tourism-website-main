@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="tech.css">
+  <script src="main.js" defer></script>
+  <script src="tech.js" defer></script>
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+
+  <main>
+    <header>
+      <img src="assets/shared/logo.svg" alt="logo" class="logo">
+      <img src="assets/shared/icon-hamburger.svg" alt="icon-hamburger" id="icon-hamburger">
+      <nav class="primary-navigation">
+        <img src="assets/shared/icon-close.svg" alt="close-button" id="close-btn">
+        <ul>
+          <li><span aria-hidden="true">00</span><a href="index.html">Home</a></li>
+          <li><span aria-hidden="true">01</span><a href="destination-moon.html">Destination</a></li>
+          <li ><span aria-hidden="true">02</span><a href="crew.html">Crew</a></li>
+          <li class="active"><span aria-hidden="true">03</span><a href="technology.html">Technology</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <h4><span>03</span>Space launch 101</h4>
+    <section class="tech-section">
+
+      <article class="image-container">
+        <picture>
+          <source media="(min-width: 900px)" srcset="assets/technology/image-launch-vehicle-portrait.jpg">
+          <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="">
+        </picture>
+      </article>
+      
+      <article class="circle-container">
+      <div class="circle active-circle" data-value="0">1</div>
+      <div class="circle" data-value="1">2</div>
+      <div class="circle" data-value="2">3</div>
+      </article>
+
+      <!-- <article class="texts">
+        <h5>THE terminology</h5>
+        <h3>LAUNCH VEHICLE</h3>
+        <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+          payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+          WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+          it's quite an awe-inspiring sight on the launch pad!</p>
+      </article> -->
+    </section>
+  </main>
+  
+</body>
+</html>
