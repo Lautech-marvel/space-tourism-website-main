@@ -7,6 +7,9 @@
     --dark-text: rgba(11, 13, 23, 1);
     --light-gray: rgb(56, 59, 75);
     --font-family: 'Barlow'; 
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
 }
 
 * {

@@ -13,6 +13,17 @@ slides.forEach((slide, index) => {
     
 })
 
+const changeSlide = (currentSlide, nextSlide) => {
+     if (!nextSlide) {
+        nextSlide = slides[0]
+    }
+    let amountToMove = nextSlide.style.left
+    slideContainer.style.transform = 'translateX(-' + amountToMove + ')'
+    
+    currentSlide.classList.remove('current-slide')
+    nextSlide.classList.add('current-slide')
+}
+
 let circles = document.querySelectorAll('.circle')
 
     circles.forEach(circleDiv => {
@@ -26,43 +37,22 @@ let circles = document.querySelectorAll('.circle')
     let circleIndex = parseInt(circleDiv.getAttribute('data-index'))
     let nextSlide = slides[circleIndex]
 
-    if (!nextSlide) {
-        nextSlide = slides[0]
-    }
-    let amountToMove = nextSlide.style.left
-    
-    slideContainer.style.transform = 'translateX(-' + amountToMove + ')'
-    
-    currentSlide.classList.remove('current-slide')
-    nextSlide.classList.add('current-slide')
+    changeSlide(currentSlide, nextSlide)
             
         })
     })
 
 
-function changeSlide() {
+function autSlide() {
     let currentSlide = document.querySelector('.current-slide')
-   
-    let nextSlide = currentSlide.nextElementSibling
-    
-
-    if (!nextSlide) {
-        nextSlide = slides[0]
-    }
-    let amountToMove = nextSlide.style.left
-    
-    slideContainer.style.transform = 'translateX(-' + amountToMove + ')'
-    
-    currentSlide.classList.remove('current-slide')
-    nextSlide.classList.add('current-slide')
+    let nextSlide = currentSlide.nextElementSibling  
     let dotIndex = slides.indexOf(nextSlide)
     document.querySelector('.circle.active-circle')?.classList.remove('active-circle')
     circles[dotIndex].classList.add('active-circle')
+    changeSlide(currentSlide, nextSlide)
 
-    setTimeout(changeSlide, 3000)
+    setTimeout(autSlide, 3000)
     
 }
 
-
-
-changeSlide()
+autSlide()

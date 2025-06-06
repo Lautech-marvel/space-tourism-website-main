@@ -3,18 +3,13 @@
 main {
     min-height: 100vh;
     padding-top: 2em;
-    /* max-width: 1500px; */
+    max-width: 1500px;
     margin: 0 auto;
-    overflow-x: hidden;
-  }
-  
-body {  
-    min-height: 100vh; 
     overflow-x: hidden;
     background-image: url('assets/crew/background-crew-mobile.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
+  }
 
 h4 {
     text-align: center;
@@ -93,7 +88,7 @@ p {
  .circles {
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.8em;
     position: absolute;
     left: 50%;
     top: 23.8em;
@@ -117,7 +112,7 @@ p {
 
  @media(min-width: 1000px) {
    section {
-    padding-left: 15%;
+    
    }
 
    .slide-container {
@@ -127,20 +122,34 @@ p {
    
     h4 {
        text-align: left;
+       padding-left: 15%;
     }
     
     .slide {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        bottom: 0;
+    padding-left: 15%;
+    padding-right: 5%;
     }
+
+    .slide-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    
+  }
 
 .crew-img-container {
     margin: 0 0;
+    min-height: 80vh;
+    width: 100%;
+}
+
+.crew-img-container img {
+   object-fit: contain;
 }
 
     .crew-info {
         text-align: left;
+        align-self: center;
     }
 
     .crew-name {
@@ -161,7 +170,7 @@ p {
     }
 
     .circles {
-        left: 15%;
+        left: 15.1%;
         top: 21em;
         transform: translateX(0);
     }
