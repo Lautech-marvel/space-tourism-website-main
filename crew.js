@@ -14,9 +14,6 @@ slides.forEach((slide, index) => {
 })
 
 const changeSlide = (currentSlide, nextSlide) => {
-     if (!nextSlide) {
-        nextSlide = slides[0]
-    }
     let amountToMove = nextSlide.style.left
     slideContainer.style.transform = 'translateX(-' + amountToMove + ')'
     
@@ -45,7 +42,11 @@ let circles = document.querySelectorAll('.circle')
 
 function autSlide() {
     let currentSlide = document.querySelector('.current-slide')
+    
     let nextSlide = currentSlide.nextElementSibling  
+    if (!nextSlide) {
+        nextSlide = slides[0]
+    }
     let dotIndex = slides.indexOf(nextSlide)
     document.querySelector('.circle.active-circle')?.classList.remove('active-circle')
     circles[dotIndex].classList.add('active-circle')

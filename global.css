@@ -123,6 +123,7 @@
    left: -42%;
    transform: translateY(-50%);
    background-color: var(--light-gray);
+   transition: 1s ease-in;
  } 
  
   nav ul {

@@ -117,7 +117,7 @@ p {
 
    .slide-container {
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - 10em);
  }
    
     h4 {
@@ -134,17 +134,16 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
-    
   }
 
 .crew-img-container {
     margin: 0 0;
-    min-height: 80vh;
+    min-height: calc(100vh - 10em);
     width: 100%;
 }
 
 .crew-img-container img {
-   object-fit: contain;
+   object-fit: cover;
 }
 
     .crew-info {
@@ -171,7 +170,7 @@ p {
 
     .circles {
         left: 15.1%;
-        top: 21em;
+        top: 80%;
         transform: translateX(0);
     }
  } 
