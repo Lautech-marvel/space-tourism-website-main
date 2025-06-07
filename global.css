@@ -6,7 +6,6 @@
     --text-color: rgb(208, 214, 249);
     --dark-text: rgba(11, 13, 23, 1);
     --light-gray: rgb(56, 59, 75);
-    --font-family: 'Barlow'; 
     --ff-serif: "Bellefair", serif;
     --ff-sans-cond: "Barlow Condensed", sans-serif;
     --ff-sans-normal: "Barlow", sans-serif;
@@ -19,7 +18,7 @@
  }
 
  body {
-    font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+    font-family: var(--ff-sans-normal), Arial, Helvetica, sans-serif;
     color: var(--clr-white);
  }
 
@@ -66,7 +65,7 @@
     align-items: center;
     padding: 1.5em 7em 1.5em 5em;
     font-size: 0.8em;
-    font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+    
     align-items: flex-start;
     position: relative;
  }
@@ -83,6 +82,7 @@
    font-weight: 300;
    text-transform: uppercase;
    letter-spacing: 0.2rem;
+   font-family: var(--ff-sans-cond), Arial, Helvetica, sans-serif;
  }
 
  li {
@@ -133,7 +133,7 @@
      margin-top: auto;
      gap: 2.5em;
      align-items: center;
-     padding: 1.5em 7em 1.5em 15%;
+     padding: 2em 7em 2em 15%;
      font-size: 0.8em;
      align-items: center;
      position: relative;
@@ -164,7 +164,7 @@
     width: 100%;
     height: 0.3em;
     background: var(--clr-white);
-    bottom: -1.5em;
+    bottom: -2em;
     left: 0;
     opacity: 0.5;
   }
@@ -175,7 +175,7 @@
     width: 100%;
     height: 0.3em;
     background: var(--clr-white);
-    bottom: -1.5em;
+    bottom: -2em;
     left: 0;
   }
  

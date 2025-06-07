@@ -20,6 +20,7 @@ h4 {
     margin-top: 2.5em;
     font-weight: 400;
     font-size: 1em;
+    font-family: var(--ff-sans-cond);
 }
 
 h4 span {
@@ -52,6 +53,7 @@ section {
     justify-content: center;
     background-color: transparent;
     border: 1px solid white;
+    font-family: var(--ff-serif);
     
 }
 
@@ -78,13 +80,13 @@ h4, h5, h3 {
 
 h5 {
   font-weight: 400;
-  font-family: 'Barlow Condensed', serif;
+  font-family: var(--ff-sans-cond), serif;
 }
 
 h3 {
   margin-top: 0.3em;
   font-size: clamp(1.5em, 1rem + 2vw, 3rem);
-  font-family: 'Bellefair', serif;
+  font-family: var(--ff-serif), serif;
 }
 
 p {
@@ -92,7 +94,7 @@ p {
     line-height: 1.65em;
     color: var(--dark-gray);
     margin-top: 1em;
-    font-family: 'Barlow', serif;
+    font-family: var(--ff-sans-normal), serif;
  }
 
  @media(min-width: 600px) {

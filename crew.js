@@ -56,4 +56,10 @@ function autSlide() {
     
 }
 
+window.addEventListener('resize', () => {
+    slides.forEach((slide, index) => {
+    slide.style.left = (slideWidth * index) + 'px'
+})
+})
+
 autSlide()

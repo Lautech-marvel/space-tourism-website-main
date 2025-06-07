@@ -9,7 +9,7 @@
  }
 
 h1, h2, h3, h4, h5 {
-     font-family: 'Bellefair', serif;
+     font-family:var(--ff-sans-normal), Arial, Helvetica, sans-serif;
 }
 
  main {
@@ -39,6 +39,7 @@ h4 {
     font-weight: 400;
     text-transform: uppercase;
     color: var(--dark-gray);
+    font-family: var(--ff-sans-cond);
 }
 
 .space-texts h1 {
@@ -46,12 +47,15 @@ h4 {
    margin-block: 0.15em 0.2em;
    text-transform: uppercase;
    color: var(--clr-white);
+   font-family: var(--ff-serif);
+   font-weight: 500;
 }
 
 p {
    font-size: 0.8rem;
    line-height: 1.65em;
    color: var(--dark-gray);
+
 }
 
 .space-texts p {
@@ -66,6 +70,7 @@ p {
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+   font-family: var(--ff-serif);
 }
 
 .explore-circle {
@@ -113,7 +118,7 @@ p {
     flex-direction: row;
     padding: 0 7em;
     height: 100%;
-    margin-top: 13%;
+    margin-top: 10%;
     justify-content: space-between;
     padding: 0 7em;
  }
@@ -143,84 +148,7 @@ p {
     background-image: url('assets/home/background-home-desktop.jpg');
    }
 
-  header{
-      padding-right: 0em;
-   }
-   
-   
-
-   .primary-navigation {
-    width: 65%;
-    position: relative;
-    min-height: auto;
-    /* display: none; */
-    z-index: 999;
-    transform: translateX(0);
- }
-
-.primary-navigation::after {
-  content: '';
-  position: absolute;
-  height: 1px;
-  width: 45%;
-  top: 50%;
-  left: -42%;
-  transform: translateY(-50%);
-  background-color: var(--light-gray);
-} 
-
- nav ul {
-    
-    display: flex;
-    flex-direction: row;
-    margin-top: auto;
-    gap: 2.5em;
-    align-items: center;
-    padding: 1.5em 7em 1.5em 15%;
-    font-size: 0.8em;
-    align-items: center;
-    position: relative;
- }
-
- nav ul li::after {
-  transition: opacity 0.3s ease-in;
- }
-
-
- nav ul li a {
-   font-weight: 300;
-   letter-spacing: 0.2rem;
- }
-
-  #icon-hamburger {
-    display: none;
-  }
-  
-  #close-btn {
-    display: none;
-  }
-
-   li:hover::after,
- li:focus::after {
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 0.3em;
-   background: var(--clr-white);
-   bottom: -1.5em;
-   left: 0;
-   opacity: 0.5;
- }
-
- li.active::after {
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 0.3em;
-   background: var(--clr-white);
-   bottom: -1.5em;
-   left: 0;
- }
+ 
 
  }
 

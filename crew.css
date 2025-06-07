@@ -17,6 +17,7 @@ h4 {
     margin-bottom: 1.5rem;
     font-weight: 400;
     font-size: 1em;
+    font-family: var(--ff-sans-cond);
 }
 
 section {
@@ -68,6 +69,16 @@ section {
 
 h5, h3 {
     text-transform: uppercase;
+    font-family: var(--ff-serif);
+}
+
+h5 {
+    font-size: clamp(1rem, 0.5rem + 12vw, 1.5rem);
+    font-weight: 400;
+}
+
+h3 {
+    font-size: clamp(1rem, 0.5rem + 5vw, 2.5rem);
 }
 
 .crew-name {
@@ -81,6 +92,7 @@ p {
     margin-top: 1em;
     width: 80%;
     margin: 0 auto;
+    font-family: var(--ff-sans-normal);
  }
 
  
@@ -146,17 +158,18 @@ p {
    object-fit: cover;
 }
 
+.crew-name {
+    margin-block: 0.2em 0.7em;
+}
+
     .crew-info {
         text-align: left;
-        align-self: center;
-    }
-
-    .crew-name {
-        margin-block: 0.5em 1em;
+       margin-top: 20%;
+        
     }
     
     p {
-        width: fit-content;
+        width: 80%;
         margin: 0 0;
      }
 
@@ -170,7 +183,7 @@ p {
 
     .circles {
         left: 15.1%;
-        top: 80%;
+        top: 85%;
         transform: translateX(0);
     }
  } 
