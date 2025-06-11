@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="destination.css">
+   <script src="destination.js" defer></script>
   <script src="main.js" defer></script>
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -28,19 +29,40 @@
 
     <h4><span>01</span> YOUR DESTINATION</h4>
     <div class="wrapper">
-      <div class="planet-container">
-        <img src="assets/destination/image-moon.png">
-    </div>
+        
+        <div>
+          <picture>
+          <source srcset="assets/destination/image-moon.webp" type="image/webp">
+          <img src="assets/destination/image-moon.png">
+        </picture>
+
+         <picture hidden>
+          <source srcset="assets/destination/image-mars.webp" type="image/webp">
+          <img src="assets/destination/image-mars.png">
+        </picture>
+
+         <picture hidden>
+          <source srcset="assets/destination/image-europa.webp" type="image/webp">
+          <img src="assets/destination/image-europa.png">
+        </picture>
+
+         <picture hidden>
+          <source srcset="assets/destination/image-titan.webp" type="image/webp">
+          <img src="assets/destination/image-titan.png">
+        </picture>
+        </div>
+    
 
     <section>
       <ul class="planets-navigation">
-        <li class="active"><a href="destination-moon.html">MOON</a></li>
-        <li><a href="destination-mars.html">MARS</a></li>
-        <li><a href="destination-europa.html">EUROPA</a></li>
-        <li><a href="destination-titan.html">TITAN</a></li>
+        <li class="active"><a href="#destination-moon" id="moon-btn">MOON</a></li>
+        <li><a href="#destination-mars" id="mars-btn">MARS</a></li>
+        <li><a href="#destination-europa" id="europa-btn">EUROPA</a></li>
+        <li><a href="#destination-titan" id="titan-btn">TITAN</a></li>
       </ul>
   
-      <h2>MOON</h2>
+      <article id="destination-moon">
+        <h2>MOON</h2>
   
       <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
         regain perspective and come back refreshed. While you’re there, take in some history 
@@ -58,6 +80,71 @@
             <h3>3 days</h3>
           </div>
         </div>
+      </article>
+         
+      <article hidden id="destination-mars">
+        <h2>Mars</h2>
+  
+      <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+        the tallest planetary mountain in our solar system. It’s two and a half times 
+        the size of Everest!</p>
+        <hr class="planets-hr-line">
+  
+        <div class="planet-info-container">
+          <div class="planet-info">
+            <h5>AVG. DISTANCE</h5>
+            <h3>225 mil. km</h3>
+          </div>
+    
+          <div class="planet-info">
+            <h5>Est. travel time</h5>
+            <h3>9 months</h3>
+          </div>
+        </div>
+      </article>
+
+      <article hidden  id="destination-europa">
+        <h2>Europa</h2>
+  
+      <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+        winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+        ice skating, curling, hockey, or simple relaxation in your snug 
+        wintery cabin.</p>
+        <hr class="planets-hr-line">
+  
+        <div class="planet-info-container">
+          <div class="planet-info">
+            <h5>AVG. DISTANCE</h5>
+            <h3>628 mil. km</h3>
+          </div>
+    
+          <div class="planet-info">
+            <h5>Est. travel time</h5>
+            <h3>3 years</h3>
+          </div>
+        </div>
+      </article>
+
+      <article hidden  id="destination-titan">
+         <h2>Titan</h2>
+  
+      <p>The only moon known to have a dense atmosphere other than Earth, Titan 
+        is a home away from home (just a few hundred degrees colder!). As a 
+        bonus, you get striking views of the Rings of Saturn.</p>
+        <hr class="planets-hr-line">
+  
+        <div class="planet-info-container">
+          <div class="planet-info">
+            <h5>AVG. DISTANCE</h5>
+            <h3>1.6 bil. km</h3>
+          </div>
+    
+          <div class="planet-info">
+            <h5>Est. travel time</h5>
+            <h3>7 years</h3>
+          </div>
+        </div>
+      </article>
     </section>
     </div>
    </main>

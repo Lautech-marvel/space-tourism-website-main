@@ -21,6 +21,7 @@ h4 {
     font-weight: 400;
     font-size: 1em;
     font-family: var(--ff-sans-cond);
+    text-transform: uppercase;
 }
 
 h4 span {
@@ -87,6 +88,7 @@ h3 {
   margin-top: 0.3em;
   font-size: clamp(1.5em, 1rem + 2vw, 3rem);
   font-family: var(--ff-serif), serif;
+  font-weight: 400;
 }
 
 p {

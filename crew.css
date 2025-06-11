@@ -18,6 +18,7 @@ h4 {
     font-weight: 400;
     font-size: 1em;
     font-family: var(--ff-sans-cond);
+    text-transform: uppercase;
 }
 
 section {
@@ -50,6 +51,8 @@ section {
     position: relative;
     display: block;
     margin: 0 auto;
+    
+    
 }
 
 .crew-img-container::after {
@@ -79,6 +82,7 @@ h5 {
 
 h3 {
     font-size: clamp(1rem, 0.5rem + 5vw, 2.5rem);
+    font-weight: 500;
 }
 
 .crew-name {
