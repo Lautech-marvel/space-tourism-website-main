@@ -29,7 +29,7 @@
     position: relative;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
+    
  }
 
  .logo {
@@ -83,6 +83,10 @@
    text-transform: uppercase;
    letter-spacing: 0.2rem;
    font-family: var(--ff-sans-cond), Arial, Helvetica, sans-serif;
+ }
+
+ #icon-hamburger {
+  cursor: pointer;
  }
 
  li {
