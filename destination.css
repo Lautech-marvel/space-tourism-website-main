@@ -35,8 +35,12 @@ img {
 }
 
 .planet-container img {
-    width: 50%;
+    width: 100%;
     animation: spin 10s linear infinite;
+}
+
+picture {
+  width: 70%;
 }
 
 section {
