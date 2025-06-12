@@ -20,3 +20,5 @@ closeBtn.addEventListener('click', () => {
 
 
 })
+
+//remember to add custom cursor
