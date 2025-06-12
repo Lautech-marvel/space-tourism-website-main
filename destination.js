@@ -16,19 +16,14 @@ destinationBtns.forEach(destinationBtn => {
 
         planetArticles.forEach(planetArticle => {
             planetArticle.hidden = true
-        })
-        
-       
+        })      
 
         planetImages.forEach(planetImage => {
             planetImage.hidden = true
         })
          
 // const tabIndex = [...destinationBtns].indexOf(destinationBtn)
-// ...existing code...
-const tabIndex = [...planetArticles].indexOf(clickedTab)
-// ...existing code...
-
+        const tabIndex = [...planetArticles].indexOf(clickedTab)
          planetImages[tabIndex].hidden = false
          
         clickedTab.hidden = false
