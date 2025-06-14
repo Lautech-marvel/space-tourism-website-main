@@ -15,10 +15,6 @@ h4 {
     text-align: center;
     margin-top: 2.5em;
     margin-bottom: 1.5rem;
-    font-weight: 400;
-    font-size: 1em;
-    font-family: var(--ff-sans-cond);
-    text-transform: uppercase;
 }
 
 section {
