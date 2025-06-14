@@ -1,8 +1,5 @@
 @import url(global.css);
 
-
-
-
 main {
     min-height: 100vh;
     padding-top: 2em;
@@ -40,12 +37,6 @@ img {
     align-items: center;
     
 }
-
-/* .planet-container img {
-    width: 70%;
-    animation: spin 10s linear infinite;
-    margin: 0 auto;
-} */
 
 picture {
     width: 70%;

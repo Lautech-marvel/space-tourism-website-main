@@ -8,11 +8,11 @@ destinationBtns.forEach(destinationBtn => {
         destinationBtns.forEach(btn => {
             btn.parentElement.classList.remove('active')
         })
+       
         destinationBtn.parentElement.classList.add('active')
-        const tab = destinationBtn.getAttribute("href")
         
+        const tab = destinationBtn.getAttribute("href")
         const clickedTab = document.querySelector(tab)
-        console.log(clickedTab);
 
         planetArticles.forEach(planetArticle => {
             planetArticle.hidden = true
