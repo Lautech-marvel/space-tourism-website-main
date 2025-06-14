@@ -1,18 +1,22 @@
 @import url(global.css);
 
+
+
+
 main {
     min-height: 100vh;
     padding-top: 2em;
     max-width: 1500px;
     margin: 0 auto;
-  }
-  
-body {  
-    min-height: 100vh; 
-    overflow-x: hidden;
+    overflow-y: hidden;
     background-image: url('assets/destination/background-destination-mobile.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+  
+body {  
+    overflow-x: hidden;
+    
 }
 
 h4 {
@@ -33,21 +37,28 @@ img {
 } 
 
 .planet-container {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+/* .planet-container img {
+    width: 70%;
+    animation: spin 10s linear infinite;
+    margin: 0 auto;
+} */
+
+picture {
+    width: 70%;
+    animation: spin 10s linear infinite;
     margin-top: 2em;
 }
 
-.planet-container img {
-    width: 100%;
-    animation: spin 10s linear infinite;
-}
-
-picture {
+/* there was a misbehaviour when ki added a width to picture; there was an horizontal scroolbar which was not functional when miving on the page. Adding margin-top to the container also causes it. Any margin in fact*/
+/* picture {
   width: 70%;
-}
+} */
 
 section {
     margin-top: 1em;
@@ -65,6 +76,10 @@ section {
     font-size: 0.8em;
     list-style: none;
  }
+
+ .planets-navigation li {
+    position: relative;
+}
 
  .planets-navigation a {
    font-weight: 300;
@@ -97,7 +112,10 @@ section {
  }
 
 h2 {
-    font-size: 3em;
+    font-size: 3.5em;
+    font-family: var(--ff-serif);
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 p {
@@ -119,12 +137,16 @@ p {
     font-size: 0.9em;
     font-weight: 400;
     color: var(--dark-gray);
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-family: var(--ff-sans-cond);
  }
 
  h3 {
     font-size: 2em;
     text-transform: uppercase;
+    font-family: var(--ff-serif);
+    font-weight: 500;
+    color: var(--clr-white);
  }
 
  .planet-info {
@@ -142,7 +164,7 @@ p {
  }
 
  @media(min-width: 600px) {
-    body {
+    main {
       background-image: url('assets/destination/background-destination-tablet.jpg');
      }
 
@@ -186,7 +208,7 @@ p {
   }
 
   @media(min-width: 1024px) {
-    body {
+    main {
       background-image: url('assets/destination/background-destination-desktop.jpg');
      }
 

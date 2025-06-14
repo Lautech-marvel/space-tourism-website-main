@@ -84,6 +84,7 @@ p {
   align-items: center;
   margin: 0 auto;
   margin-bottom: 2em;
+  text-decoration: none;
 }
 
 .explore-circle::after {
@@ -140,6 +141,7 @@ p {
 
  .explore-circle {
   align-self: flex-end;
+
  }
 }
 
