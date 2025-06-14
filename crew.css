@@ -77,7 +77,8 @@ h5, h3 {
 
 h5 {
     font-size: clamp(1rem, 0.5rem + 12vw, 1.5rem);
-    font-weight: 400;
+    font-weight: 200;
+    color: var(--dark-gray);
 }
 
 h3 {

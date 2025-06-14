@@ -82,6 +82,7 @@ h4, h5, h3 {
 h5 {
   font-weight: 400;
   font-family: var(--ff-sans-cond), serif;
+  font-size: 0.83em
 }
 
 h3 {

@@ -71,7 +71,7 @@
  }
 
  nav ul li span {
-   font-weight: 700;
+   font-weight: bold;
    color: var(--clr-white);
    margin-inline-end: 0.5em;
  }
@@ -79,7 +79,7 @@
  nav ul li a {
    text-decoration: none;
    color:var(--clr-white);
-   font-weight: 300;
+   font-weight: lighter;
    text-transform: uppercase;
    letter-spacing: 0.2rem;
    font-family: var(--ff-sans-cond), Arial, Helvetica, sans-serif;
@@ -99,6 +99,22 @@
    position: absolute;
    top: 2.2em;
    right: 2em;
+ }
+
+ h4 span {
+    margin-right: 1m;
+    color: var(--light-gray);
+    font-weight: bold;
+    letter-spacing: 0; 
+ }
+
+ h4 {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--dark-gray);
+    font-family: var(--ff-sans-cond);
  }
 
  @media(min-width: 1024px) {
